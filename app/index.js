@@ -22,5 +22,23 @@ module.exports = {
 		} else if (typeof(str) === typeof(Array()) && 2 <= str.length === 0) {
 			return undefined;
 		}
+	},
+
+	/*getPrimes function*/
+	getPrimes: function(n) {
+		if (n === 1) {
+			return "has no primes";
+		}
+		var sieve = [];
+		var primes = [];
+		for (var i = 2; i <= n; i++) {
+			if (!sieve[i]) {
+				primes.push(i);
+				for (var j = i; j <= n; j += i) {
+					sieve[j] = true;
+				}
+			}
+		}
+		return primes;
 	}
 }
