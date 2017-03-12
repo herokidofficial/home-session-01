@@ -1,0 +1,25 @@
+{
+  "name": "home-session-01",
+  "version": "1.0.0",
+  "description": "Programming logic Data Types and Primes",
+  "main": "app/index.js",  
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jasmine tests/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/herokidofficial/home-session-01.git"
+  },
+  "author": "Iraoya Osariemen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/herokidofficial/home-session-01/issues"
+  },
+  "homepage": "https://github.com/herokidofficial/home-session-01#readme",
+  "dependencies": {
+    "jasmine": "^2.5.3"
+  }
+}
