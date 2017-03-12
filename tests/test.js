@@ -89,8 +89,8 @@ describe("Data types tests ", function() {
 });
 
 describe("Get Primes test case for prime numbers", function() {
-  it("should return `has no primes` for `1`", function() {
-    expect(myApp.getPrimes(1)).toBe('has no primes');
+  it("should return `[]` for `1`", function() {
+    expect(myApp.getPrimes(1)).toEqual([]);
   });
   it("should return `[2, 3, 5, 7, 11]` for `12`", function() {
     expect(myApp.getPrimes(12)).toEqual([2, 3, 5, 7, 11]);
@@ -103,5 +103,8 @@ describe("Get Primes test case for prime numbers", function() {
   });
   it("should return `[2]` for `2`", function() {
     expect(myApp.getPrimes(2)).toEqual([2]);
+  });
+  it("should return `[]` for empty, zero, negative input", function() {
+    expect(myApp.getPrimes(0)).toEqual([]);
   });
 });

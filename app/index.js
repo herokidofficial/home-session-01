@@ -26,9 +26,6 @@ module.exports = {
 
 	/*getPrimes function*/
 	getPrimes: function(n) {
-		if (n === 1) {
-			return "has no primes";
-		}
 		var sieve = [];
 		var primes = [];
 		for (var i = 2; i <= n; i++) {
