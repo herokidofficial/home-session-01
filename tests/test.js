@@ -87,3 +87,21 @@ describe("Data types tests ", function() {
     });
   });
 });
+
+describe("Get Primes test case for prime numbers", function() {
+  it("should return `has no primes` for `1`", function() {
+    expect(myApp.getPrimes(1)).toBe.('has no primes');
+  });
+  it("should return `[2, 3, 5, 7, 11]` for `12`", function() {
+    expect(myApp.getPrimes(12)).toBe.([2, 3, 5, 7, 11]);
+  });
+  it("should return `[2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43]` for `45`", function() {
+    expect(myApp.getPrimes(45)).toBe([2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43]);
+  });
+  it("should return `[2, 3, 5, 7]` for `10`", function() {
+    expect(myApp.getPrimes(10)).toBe([2, 3, 5, 7]);
+  });
+  it("should return `[2]` for `2`", function() {
+    expect(myApp.getPrimes(2)).toBe([2]);
+  });
+});
